@@ -7,8 +7,8 @@
     <author-email></author-email>
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
-    <unique-id>1wrxzpoqz4tff</unique-id>
-    <saved-with-version>13700</saved-with-version>
+    <unique-id>3a8yy9egkbvyg</unique-id>
+    <saved-with-version>13200</saved-with-version>
     <used-plugins />
     <used-behaviors />
     <used-effects />
@@ -43,13 +43,5 @@
     <global-instances />
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
-    <files-folder expanded="1">
-        <file-folder expanded="0" name="Icons">
-            <file name="icon-16.png" />
-            <file name="icon-32.png" />
-            <file name="icon-114.png" />
-            <file name="icon-128.png" />
-            <file name="loading-logo.png" />
-        </file-folder>
-    </files-folder>
+    <files-folder expanded="1" />
 </c2project>
