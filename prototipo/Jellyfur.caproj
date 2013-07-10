@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>Jellyfur</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
@@ -35,10 +35,12 @@
     <object-folder expanded="1" />
     <families />
     <layout-folder expanded="1">
-        <layout>Layout 1.xml</layout>
+        <layout>Nivel.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Pelota.xml</event-sheet>
+        <event-sheet>Jugador.xml</event-sheet>
+        <event-sheet>Eventos Nivel.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder expanded="1" />

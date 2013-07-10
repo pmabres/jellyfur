@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Nivel</name>
     <sid>3679448555983563</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Pelota</event-sheet>
     <size>
         <width>1280</width>
         <height>1024</height>
