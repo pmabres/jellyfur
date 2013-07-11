@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel</name>
     <events>
+        <include>Globales</include>
         <include>Jugador</include>
         <include>Pelota</include>
     </events>

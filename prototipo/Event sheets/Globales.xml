@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Globales</name>
+    <events>
+        <event-block sid="732700605043561">
+            <conditions>
+                <condition id="0" name="On function" sid="3584425088999928" type="Function">
+                    <param id="0" name="Name">&quot;calcularAncho&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set return value" sid="6051445081853009" type="Function">
+                    <param id="0" name="Value">sqrt((Function.Param(1)-Function.Param(0))^2 + (Function.Param(3)-Function.Param(2))^2)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

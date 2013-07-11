@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jugador</name>
     <events>
+        <include>Globales</include>
         <variable constant="0" name="TouchFinY" sid="4909332033145409" static="0" type="number">0</variable>
         <variable constant="0" name="TouchIniY" sid="367465510559366" static="0" type="number">0</variable>
         <variable constant="0" name="TouchFinX" sid="3719114407614673" static="0" type="number">0</variable>
@@ -43,7 +44,7 @@
                     <param id="3" name="Y">TouchIniY</param>
                 </action>
                 <action id="-5" name="Set width" sid="4489135034873944" type="Plataforma">
-                    <param id="0" name="Width">sqrt((TouchFinX-TouchIniX)^2 + (TouchFinY-TouchIniY)^2)</param>
+                    <param id="0" name="Width">Function.Call(&quot;calcularAncho&quot;,TouchIniX,TouchFinX,TouchIniY,TouchFinY)</param>
                 </action>
                 <action id="-8" name="Set angle" sid="4001703485719211" type="Plataforma">
                     <param id="0" name="Angle">angle(TouchIniX,TouchIniY,TouchFinX,TouchFinY)</param>
