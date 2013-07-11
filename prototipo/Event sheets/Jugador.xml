@@ -2,5 +2,104 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jugador</name>
-    <events />
+    <events>
+        <variable constant="0" name="TouchFinY" sid="4909332033145409" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchIniY" sid="367465510559366" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchFinX" sid="3719114407614673" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchIniX" sid="6008173256341772" static="0" type="number">0</variable>
+        <comment>Comienzo y Fin de Touch</comment>
+        <event-block sid="1341025430640698">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="8746572621944543" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1550314710370289" type="System">
+                    <param id="0" name="Variable">TouchIniX</param>
+                    <param id="1" name="Value">Touch.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="920396295322078" type="System">
+                    <param id="0" name="Variable">TouchIniY</param>
+                    <param id="1" name="Value">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5440870794137959">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="5792731607467088" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9330491476344047" type="System">
+                    <param id="0" name="Variable">TouchFinX</param>
+                    <param id="1" name="Value">Touch.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="3189620014232516" type="System">
+                    <param id="0" name="Variable">TouchFinY</param>
+                    <param id="1" name="Value">Touch.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="3006043424140215" type="System">
+                    <param id="0" name="Object to create">Plataforma</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">TouchIniX</param>
+                    <param id="3" name="Y">TouchIniY</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Info Touch&apos;s</comment>
+        <event-block sid="6304690990288351">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3052163121278977" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2997122993680962" type="Touchs">
+                    <param id="0" name="Text">TouchIniX &amp; &quot;  / &quot; &amp; TouchIniY</param>
+                </action>
+                <action id="0" name="Set text" sid="7589018151393709" type="Touchs2">
+                    <param id="0" name="Text">TouchFinX &amp; &quot;  / &quot; &amp; TouchFinY</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7419163261882847">
+            <conditions>
+                <condition id="-18" name="On created" sid="8814822427630129" type="Plataforma" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-5" name="Set width" sid="5462870469411593" type="Plataforma">
+                    <param id="0" name="Width">(TouchFinX-TouchIniX) + (TouchFinY - TouchIniY)</param>
+                </action>
+                <action id="-8" name="Set angle" sid="6074693227947766" type="Plataforma">
+                    <param id="0" name="Angle">atan((TouchFinY-TouchIniY)/(TouchFinX-TouchIniX))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1659734016387317">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3921484258011859" type="System">
+                            <param id="0" name="Variable">TouchIniY</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">TouchFinY</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="195917519671878" type="Plataforma">
+                            <param id="0" name="Width">(TouchFinX-TouchIniX) + (TouchIniY - TouchFinY)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2618236164656482">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7604700820147916" type="System">
+                            <param id="0" name="Variable">TouchIniY</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">TouchFinY</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="4478177530611712" type="Plataforma">
+                            <param id="0" name="Width">(TouchFinX-TouchIniX) + (TouchFinY - TouchIniY)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
 </c2eventsheet>
