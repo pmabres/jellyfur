@@ -6,5 +6,19 @@
         <include>Globales</include>
         <include>Jugador</include>
         <include>Pelota</include>
+        <comment>Info Touch&apos;s</comment>
+        <event-block sid="5272428762526984">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6394911811825767" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="108038407755002" type="Touchs">
+                    <param id="0" name="Text">TouchIniX &amp; &quot;  / &quot; &amp; TouchIniY</param>
+                </action>
+                <action id="0" name="Set text" sid="1913902116468719" type="Touchs2">
+                    <param id="0" name="Text">TouchFinX &amp; &quot;  / &quot; &amp; TouchFinY</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

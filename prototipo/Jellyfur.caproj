@@ -11,9 +11,9 @@
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -51,7 +51,7 @@
                 <plugin id="Function" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Sprites">
+        <object-folder expanded="1" name="Sprites">
             <object-type global="1" name="pelota" sid="5023381750019706">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -81,11 +81,19 @@
             </object-type>
             <object-type name="Plataforma" sid="6155070902449789">
                 <plugin id="TiledBg" />
+                <instance-variables>
+                    <instance-variable name="Visible" sid="3469360531461392" type="boolean" />
+                    <instance-variable name="Timer" sid="8342459353046225" type="number" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="Physics" sid="8721116580681598">
                         <behavior id="Physics" />
                     </behavior-type>
                 </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="Destroy" sid="7220362104600101">
+                <plugin id="Particles" />
                 <texture />
             </object-type>
         </object-folder>

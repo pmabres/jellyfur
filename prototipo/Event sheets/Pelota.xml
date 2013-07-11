@@ -17,5 +17,27 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8856970232266534">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2218631913383704" type="pelota">
+                    <param id="0" name="Object">Plataforma</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6825343150510881" type="pelota" />
+            </actions>
+        </event-block>
+        <event-block sid="6786833531810696">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="8800761502077497" type="pelota" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="5597292015321319" type="pelota">
+                    <param id="0" name="Object">Destroy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
