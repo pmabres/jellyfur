@@ -2,5 +2,20 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Pelota</name>
-    <events />
+    <events>
+        <event-block sid="8584297399659228">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3657920102651457" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2473063912883812" type="pelota" />
+                <action id="-3" name="Create object" sid="2245107754952583" type="System">
+                    <param id="0" name="Object to create">pelota</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">50</param>
+                    <param id="3" name="Y">50</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
