@@ -144,7 +144,7 @@
                 <instance type="Destroy" uid="7">
                     <properties>
                         <rate>30</rate>
-                        <spray-cone>50</spray-cone>
+                        <spray-cone>359</spray-cone>
                         <type>One-shot</type>
                         <initial-particle-properties></initial-particle-properties>
                         <speed>80</speed>
@@ -168,8 +168,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>412</x>
-                        <y>-181</y>
+                        <x>356</x>
+                        <y>-119</y>
                         <z>0</z>
                         <width>128</width>
                         <height>128</height>
