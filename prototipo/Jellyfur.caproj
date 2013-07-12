@@ -79,7 +79,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Plataforma" sid="6155070902449789">
+            <object-type name="Escenario" sid="6155070902449789">
                 <plugin id="TiledBg" />
                 <instance-variables>
                     <instance-variable name="Visible" sid="3469360531461392" type="boolean" />
@@ -94,6 +94,19 @@
             </object-type>
             <object-type name="Destroy" sid="7220362104600101">
                 <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Plataforma" sid="1061005549881597">
+                <plugin id="TiledBg" />
+                <instance-variables>
+                    <instance-variable name="Visible" sid="8645955437493389" type="boolean" />
+                    <instance-variable name="Timer" sid="96444081203329" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Physics" sid="7421042554346958">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
                 <texture />
             </object-type>
         </object-folder>

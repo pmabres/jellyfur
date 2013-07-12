@@ -64,7 +64,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Plataforma" uid="6">
+                <instance type="Escenario" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -81,7 +81,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -180,7 +180,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="8">
+                <instance type="Escenario" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -197,7 +197,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -219,7 +219,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="9">
+                <instance type="Escenario" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -236,7 +236,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -258,7 +258,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="10">
+                <instance type="Escenario" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -275,7 +275,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -297,7 +297,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="11">
+                <instance type="Escenario" uid="11">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -314,7 +314,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -336,7 +336,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="12">
+                <instance type="Escenario" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -353,7 +353,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -375,7 +375,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="13">
+                <instance type="Escenario" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -392,7 +392,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -414,7 +414,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="14">
+                <instance type="Escenario" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -431,7 +431,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -453,7 +453,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="15">
+                <instance type="Escenario" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -470,7 +470,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -492,7 +492,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="16">
+                <instance type="Escenario" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -509,7 +509,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -531,7 +531,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="17">
+                <instance type="Escenario" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -548,7 +548,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -570,7 +570,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="18">
+                <instance type="Escenario" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -587,7 +587,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -609,7 +609,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="20">
+                <instance type="Escenario" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -626,7 +626,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -648,7 +648,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="21">
+                <instance type="Escenario" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -665,7 +665,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -687,7 +687,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="19">
+                <instance type="Escenario" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -704,7 +704,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -726,7 +726,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="22">
+                <instance type="Escenario" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -743,7 +743,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -765,7 +765,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="23">
+                <instance type="Escenario" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -782,7 +782,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -804,7 +804,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="24">
+                <instance type="Escenario" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -821,7 +821,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -843,7 +843,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="25">
+                <instance type="Escenario" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -860,7 +860,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -882,7 +882,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="26">
+                <instance type="Escenario" uid="26">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -899,7 +899,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -921,7 +921,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="27">
+                <instance type="Escenario" uid="27">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -938,7 +938,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -960,7 +960,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="28">
+                <instance type="Escenario" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -977,7 +977,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -999,7 +999,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="29">
+                <instance type="Escenario" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1016,7 +1016,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0.2</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -1038,7 +1038,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Plataforma" uid="30">
+                <instance type="Escenario" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1055,7 +1055,7 @@
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
-                                <elasticity>0.2</elasticity>
+                                <elasticity>0.5</elasticity>
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
@@ -1074,6 +1074,45 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Plataforma" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <Visible>false</Visible>
+                        <Timer>0</Timer>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Physics">
+                            <properties>
+                                <immovable>Yes</immovable>
+                                <collision-mask>Use collision polygon</collision-mask>
+                                <prevent-rotation>No</prevent-rotation>
+                                <density>1</density>
+                                <friction>0.5</friction>
+                                <elasticity>1</elasticity>
+                                <linear-damping>0</linear-damping>
+                                <angular-damping>0.01</angular-damping>
+                                <bullet>No</bullet>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>534</x>
+                        <y>-89</y>
+                        <z>0</z>
+                        <width>288</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
