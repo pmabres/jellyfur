@@ -10,17 +10,18 @@
     <unique-id>3a8yy9egkbvyg</unique-id>
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
-        <plugin author="Scirra" id="Function" version="1">Function</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
@@ -131,11 +132,25 @@
                         </behavior-type>
                     </behaviors>
                 </object-type>
+                <object-type name="isDebugOn" sid="3365095440864498">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="8521950544158447">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                        <behavior-type name="Pin" sid="4986442369593895">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
             </object-folder>
         </object-folder>
         <object-type name="Fondo" sid="8957140550182233">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="Keyboard" sid="3451967604173873">
+            <plugin id="Keyboard" />
         </object-type>
     </object-folder>
     <families />
@@ -156,6 +171,7 @@
             </properties>
         </global-instance>
         <global-instance type="Function" uid="4" />
+        <global-instance type="Keyboard" uid="33" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
