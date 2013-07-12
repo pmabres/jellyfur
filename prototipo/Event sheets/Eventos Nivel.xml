@@ -7,21 +7,5 @@
         <include>Globales</include>
         <include>Jugador</include>
         <include>Pelota</include>
-        <event-block sid="3947963734602358">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="7593801255894417" type="System" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="5865281497088416">
-                    <conditions />
-                    <actions>
-                        <action id="-16" name="Wait" sid="7192976256295313" type="System">
-                            <param id="0" name="Seconds">3</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
     </events>
 </c2eventsheet>
