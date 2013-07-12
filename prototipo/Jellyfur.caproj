@@ -164,6 +164,14 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
+            <object-type name="PlataformaTrazo" sid="7948526545294159">
+                <plugin id="TiledBg" />
+                <instance-variables>
+                    <instance-variable name="Visible" sid="3148348214909792" type="boolean" />
+                    <instance-variable name="Timer" sid="3439375170492964" type="number" />
+                </instance-variables>
+                <texture />
+            </object-type>
         </object-folder>
         <object-folder expanded="1" name="HUD">
             <object-folder expanded="1" name="Debug">

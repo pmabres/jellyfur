@@ -23,6 +23,12 @@
                     <param id="0" name="Variable">TouchIniY</param>
                     <param id="1" name="Value">Touch.Y</param>
                 </action>
+                <action id="-3" name="Create object" sid="5490484591853701" type="System">
+                    <param id="0" name="Object to create">PlataformaTrazo</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">TouchIniX</param>
+                    <param id="3" name="Y">TouchIniY</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5440870794137959">
@@ -87,6 +93,7 @@
                         <action id="-5" name="Set width" sid="2002052413886634" type="colisionPlataforma">
                             <param id="0" name="Width">Plataforma.Width</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="1688860780281254" type="PlataformaTrazo" />
                     </actions>
                     <sub-events>
                         <event-block sid="1665340943800498">
@@ -173,6 +180,24 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="1318975216233119" type="colisionPlataforma" />
+            </actions>
+        </event-block>
+        <event-block sid="4585133168262383">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="7395966289448487" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="2807868895984669" type="System">
+                    <param id="0" name="Variable">Panning</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="3435324326183175" type="PlataformaTrazo">
+                    <param id="0" name="Width">distance(TouchIniX,TouchIniY,Touch.X,Touch.Y)</param>
+                </action>
+                <action id="-8" name="Set angle" sid="6763837989745515" type="PlataformaTrazo">
+                    <param id="0" name="Angle">angle(TouchIniX,TouchIniY,Touch.X,Touch.Y)</param>
+                </action>
             </actions>
         </event-block>
     </events>
