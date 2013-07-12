@@ -39,17 +39,52 @@
                     <param id="2" name="X">TouchIniX</param>
                     <param id="3" name="Y">TouchIniY</param>
                 </action>
+                <action id="-3" name="Create object" sid="8620059876343219" type="System">
+                    <param id="0" name="Object to create">colisionPlataforma</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">Plataforma.X</param>
+                    <param id="3" name="Y">Plataforma.Y</param>
+                </action>
                 <action id="-5" name="Set width" sid="4489135034873944" type="Plataforma">
                     <param id="0" name="Width">Function.Call(&quot;calcularAncho&quot;,TouchIniX,TouchFinX,TouchIniY,TouchFinY)</param>
                 </action>
                 <action id="-8" name="Set angle" sid="4001703485719211" type="Plataforma">
                     <param id="0" name="Angle">angle(TouchIniX,TouchIniY,TouchFinX,TouchFinY)</param>
                 </action>
-                <action id="-13" name="Set boolean" sid="6892969583636446" type="Plataforma">
-                    <param id="0" name="Instance variable">Visible</param>
-                    <param id="1" name="Value">1</param>
+                <action id="-8" name="Set angle" sid="3500294992486792" type="colisionPlataforma">
+                    <param id="0" name="Angle">Plataforma.Angle</param>
+                </action>
+                <action id="-5" name="Set width" sid="2002052413886634" type="colisionPlataforma">
+                    <param id="0" name="Width">Plataforma.Width</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="1665340943800498">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="6942284115403575" type="colisionPlataforma">
+                            <param id="0" name="Object">Escenario</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="8204565789076752" type="colisionPlataforma">
+                            <param id="0" name="Object">colisionPlataforma</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="6892969583636446" type="Plataforma">
+                            <param id="0" name="Instance variable">Visible</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6120102561113504">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="893462199317517" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9991045398474599" type="Plataforma" />
+                        <action id="-9" name="Destroy" sid="7053199099204651" type="colisionPlataforma" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Las plataformas desaparecen despues de 2 segundos</comment>
         <event-block sid="7576901287156011">

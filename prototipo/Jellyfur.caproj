@@ -15,14 +15,12 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -77,7 +75,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Sprites">
+        <object-folder expanded="1" name="Sprites">
             <object-type global="1" name="pelota" sid="5023381750019706">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -135,6 +133,30 @@
                 </behaviors>
                 <texture />
             </object-type>
+            <object-type global="1" name="colisionPlataforma" sid="4193821739066429">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="6060500914344226">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3288641314011571" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="1" y="1" />
+                                <point x="1" y="0.0078125" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo" sid="8957140550182233">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="HUD">
             <object-folder expanded="1" name="Debug">
@@ -168,15 +190,20 @@
                 </object-type>
             </object-folder>
         </object-folder>
-        <object-type name="Fondo" sid="8957140550182233">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
         <object-type name="Keyboard" sid="3451967604173873">
             <plugin id="Keyboard" />
         </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="DebugTexts" plugin-id="Text" sid="387655158634533">
+            <members>
+                <member>Debug</member>
+                <member>isDebugOn</member>
+                <member>Touchs</member>
+                <member>Touchs2</member>
+            </members>
+        </family>
+    </families>
     <layout-folder expanded="1">
         <layout>Nivel.xml</layout>
     </layout-folder>
@@ -188,13 +215,13 @@
         <event-sheet>Debug.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="0">
+        <global-instance type="Touch" uid="4">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Function" uid="4" />
-        <global-instance type="Keyboard" uid="33" />
+        <global-instance type="Function" uid="45" />
+        <global-instance type="Keyboard" uid="46" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
