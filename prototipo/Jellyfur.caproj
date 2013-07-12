@@ -15,13 +15,17 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
@@ -30,7 +34,7 @@
     </configurations>
     <window-size>
         <width>640</width>
-        <height>480</height>
+        <height>600</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <use-loader-layout>0</use-loader-layout>
@@ -53,8 +57,27 @@
             <object-type name="Function" sid="1901525076047988">
                 <plugin id="Function" />
             </object-type>
+            <object-type name="Paneo" sid="6140356652383485">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="1105057609866815">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="Bullet" sid="2102375596012376">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="3711233768620329">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4707482064403372" speed="5">
+                        <frame duration="1" hotspotX="0.518519" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
-        <object-folder expanded="1" name="Sprites">
+        <object-folder expanded="0" name="Sprites">
             <object-type global="1" name="pelota" sid="5023381750019706">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -113,7 +136,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="HUD">
+        <object-folder expanded="0" name="HUD">
             <object-folder expanded="1" name="Debug">
                 <object-type name="Touchs" sid="7417469781482397">
                     <plugin id="Text" />
