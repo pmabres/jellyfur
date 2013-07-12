@@ -17,7 +17,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="8856970232266534">
+        <event-block disabled="1" sid="8856970232266534">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="2218631913383704" type="pelota">
                     <param id="0" name="Object">Plataforma</param>
