@@ -84,5 +84,19 @@
                 <action id="-9" name="Destroy" sid="3649626974683733" type="Plataforma" />
             </actions>
         </event-block>
+        <event-block sid="3923308069015659">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2270516425393828" type="pelota">
+                    <param id="0" name="Object">Plataforma</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="5" name="Apply impulse at angle" sid="5179011844163587" type="pelota">
+                    <param id="0" name="Impulse">1</param>
+                    <param id="1" name="Angle">Plataforma.Angle + 90</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
