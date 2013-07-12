@@ -10,14 +10,16 @@
     <unique-id>3a8yy9egkbvyg</unique-id>
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -110,13 +112,24 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="HUD">
-            <object-folder expanded="0" name="Debug">
+        <object-folder expanded="1" name="HUD">
+            <object-folder expanded="1" name="Debug">
                 <object-type name="Touchs" sid="7417469781482397">
                     <plugin id="Text" />
                 </object-type>
                 <object-type name="Touchs2" sid="7501836371274361">
                     <plugin id="Text" />
+                </object-type>
+                <object-type name="Debug" sid="6071331956296272">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="7127837407403261">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                        <behavior-type name="Pin" sid="6526918010185259">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
                 </object-type>
             </object-folder>
         </object-folder>
@@ -134,6 +147,7 @@
         <event-sheet>Jugador.xml</event-sheet>
         <event-sheet>Eventos Nivel.xml</event-sheet>
         <event-sheet>Globales.xml</event-sheet>
+        <event-sheet>Debug.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="0">

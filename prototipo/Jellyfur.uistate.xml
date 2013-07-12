@@ -11,10 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>Nivel</layout>
-        <event-sheet active="1">Jugador</event-sheet>
+        <event-sheet>Jugador</event-sheet>
         <event-sheet>Eventos Nivel</event-sheet>
         <event-sheet>Pelota</event-sheet>
         <event-sheet>Globales</event-sheet>
+        <event-sheet active="1">Debug</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

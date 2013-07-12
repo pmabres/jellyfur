@@ -39,5 +39,19 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="7746956462119235">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3017841988083003" type="pelota">
+                    <param id="0" name="Object">Plataforma</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="5" name="Apply impulse at angle" sid="6753356890567974" type="pelota">
+                    <param id="0" name="Impulse">1</param>
+                    <param id="1" name="Angle">abs(Plataforma.Angle) - 90</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

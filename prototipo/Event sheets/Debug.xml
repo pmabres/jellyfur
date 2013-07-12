@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Debug</name>
+    <events>
+        <include>Globales</include>
+        <comment>Info Touch&apos;s</comment>
+        <event-block sid="9602231036334132">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5682573488570964" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6589453553179262" type="Debug">
+                    <param id="0" name="Text">abs(angle(TouchIniX,TouchIniY,TouchFinX,TouchFinY))</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

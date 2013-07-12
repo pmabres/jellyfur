@@ -3,6 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Globales</name>
     <events>
+        <include>Eventos Nivel</include>
+        <variable constant="0" name="PlatformAngle" sid="8066486332632884" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchFinY" sid="5698907187149169" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchIniY" sid="2108124168040214" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchFinX" sid="3249374152910727" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchIniX" sid="8442675877906303" static="0" type="number">0</variable>
         <event-block sid="732700605043561">
             <conditions>
                 <condition id="0" name="On function" sid="3584425088999928" type="Function">
