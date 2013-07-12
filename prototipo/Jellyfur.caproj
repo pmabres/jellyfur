@@ -10,23 +10,21 @@
     <unique-id>3a8yy9egkbvyg</unique-id>
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
-        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
-        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -59,6 +57,9 @@
             </object-type>
             <object-type name="Paneo" sid="6140356652383485">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Mov" sid="8467220802580367" type="boolean" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="ScrollTo" sid="1105057609866815">
                         <behavior id="scrollto" />
@@ -188,13 +189,13 @@
         <event-sheet>Debug.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="0">
+        <global-instance type="Touch" uid="4">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Function" uid="4" />
-        <global-instance type="Keyboard" uid="33" />
+        <global-instance type="Function" uid="45" />
+        <global-instance type="Keyboard" uid="46" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />

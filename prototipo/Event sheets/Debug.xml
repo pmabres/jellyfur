@@ -56,6 +56,9 @@
                         <action id="-15" name="Set visible" sid="5231924550917679" type="Debug">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="2153891685929019" type="Paneo">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9973177676944639">
@@ -67,6 +70,9 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="7363032889701487" type="Debug">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2226984449382879" type="Paneo">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>

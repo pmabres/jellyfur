@@ -1429,7 +1429,7 @@
                 </instance>
                 <instance type="Escenario" uid="40">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <instance-variables>
@@ -1505,7 +1505,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="isDebugOn" uid="34">
+                <instance type="isDebugOn" uid="0">
                     <properties>
                         <text>DebugMode ON</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -1628,6 +1628,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Mov>true</Mov>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="ScrollTo" />
                         <behavior-instance type="Bullet">

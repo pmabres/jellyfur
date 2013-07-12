@@ -8,6 +8,11 @@
         <event-block sid="1341025430640698">
             <conditions>
                 <condition id="0" name="On any touch start" sid="8746572621944543" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="4682271552212318" type="System">
+                    <param id="0" name="Variable">Paneo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="1550314710370289" type="System">
@@ -18,11 +23,20 @@
                     <param id="0" name="Variable">TouchIniY</param>
                     <param id="1" name="Value">Touch.Y</param>
                 </action>
+                <action id="-9" name="Set value" sid="8225206208910016" type="System">
+                    <param id="0" name="Variable">Paneo</param>
+                    <param id="1" name="Value">2</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5440870794137959">
             <conditions>
                 <condition id="1" name="On any touch end" sid="5792731607467088" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="5418650961076593" type="System">
+                    <param id="0" name="Variable">Paneo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="9330491476344047" type="System">
@@ -45,7 +59,7 @@
                 <action id="-8" name="Set angle" sid="4001703485719211" type="Plataforma">
                     <param id="0" name="Angle">angle(TouchIniX,TouchIniY,TouchFinX,TouchFinY)</param>
                 </action>
-                <action id="-13" name="Set boolean" sid="6892969583636446" type="Plataforma">
+                <action id="-13" name="Set boolean" sid="7553834383575366" type="Plataforma">
                     <param id="0" name="Instance variable">Visible</param>
                     <param id="1" name="Value">1</param>
                 </action>
