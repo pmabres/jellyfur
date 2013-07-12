@@ -4,6 +4,7 @@
     <name>Globales</name>
     <events>
         <include>Eventos Nivel</include>
+        <variable comment="Indica si se esta haciendo el paneo inicial" constant="0" name="Panning" sid="1503081492455265" static="0" type="number">1</variable>
         <variable constant="0" name="PlatformAngle" sid="8066486332632884" static="0" type="number">0</variable>
         <variable constant="0" name="TouchFinY" sid="5698907187149169" static="0" type="number">0</variable>
         <variable constant="0" name="TouchIniY" sid="2108124168040214" static="0" type="number">0</variable>

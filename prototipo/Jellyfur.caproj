@@ -19,8 +19,8 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -48,7 +48,7 @@
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="0" name="Sistema">
+        <object-folder expanded="1" name="Sistema">
             <object-type name="Touch" sid="7879738715835822">
                 <plugin id="Touch" />
             </object-type>
@@ -57,6 +57,9 @@
             </object-type>
             <object-type name="Paneo" sid="6140356652383485">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Mov" sid="8467220802580367" type="boolean" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="ScrollTo" sid="1105057609866815">
                         <behavior id="scrollto" />
@@ -135,6 +138,10 @@
             </object-type>
             <object-type global="1" name="colisionPlataforma" sid="4193821739066429">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Visible" sid="4967554256058144" type="boolean" />
+                    <instance-variable name="Timer" sid="1316756065098998" type="number" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="Physics" sid="6060500914344226">
                         <behavior id="Physics" />
@@ -158,7 +165,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="HUD">
+        <object-folder expanded="1" name="HUD">
             <object-folder expanded="1" name="Debug">
                 <object-type name="Touchs" sid="7417469781482397">
                     <plugin id="Text" />

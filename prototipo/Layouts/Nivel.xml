@@ -1391,7 +1391,7 @@
                 </instance>
                 <instance type="Escenario" uid="40">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <instance-variables>
@@ -1552,6 +1552,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Mov>true</Mov>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="ScrollTo" />
                         <behavior-instance type="Bullet">
@@ -1587,6 +1590,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Visible>true</Visible>
+                        <Timer>0</Timer>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Physics">
                             <properties>
@@ -1691,7 +1698,7 @@
                 <instance type="Debug" uid="32">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>

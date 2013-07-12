@@ -22,7 +22,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="6589453553179262" type="Debug">
-                            <param id="0" name="Text">abs(angle(TouchIniX,TouchIniY,TouchFinX,TouchFinY))</param>
+                            <param id="0" name="Text">Panning</param>
                         </action>
                     </actions>
                 </event-block>
@@ -53,6 +53,9 @@
                         <action id="-15" name="Set visible" sid="4489428924059946" type="DebugTexts">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="2153891685929019" type="Paneo">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9973177676944639">
@@ -61,6 +64,9 @@
                     </conditions>
                     <actions>
                         <action id="-15" name="Set visible" sid="9821374434603357" type="DebugTexts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2226984449382879" type="Paneo">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
