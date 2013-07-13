@@ -7,6 +7,16 @@
         <include>Globales</include>
         <include>Jugador</include>
         <include>Pelota</include>
+        <event-block disabled="1" sid="732671032258805">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7832575410337874" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="12" name="Set world gravity" sid="9362611855914385" type="pelota">
+                    <param id="0" name="Gravity">100</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="4893606726418217">
             <conditions>
                 <condition id="2" name="Is in touch" sid="6679799053309494" type="Touch" />
