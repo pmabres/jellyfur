@@ -9,9 +9,6 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="2473063912883812" type="pelota" />
-                <action disabled="1" id="-16" name="Wait" sid="6584020134769219" type="System">
-                    <param id="0" name="Seconds">12</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="3490682468242018">
