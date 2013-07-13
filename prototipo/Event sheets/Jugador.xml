@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jugador</name>
     <events>
+        <variable comment="Especifica si el bloque esta tocando el escenario" constant="0" name="touched" sid="2162052163943012" static="0" type="number">0</variable>
         <include>Globales</include>
         <comment>Comienzo y Fin de Touch</comment>
         <event-block sid="1341025430640698">
@@ -37,7 +38,7 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block collapsed="1" sid="9277033433944453">
+                <event-block sid="9277033433944453">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="1469871349608615" type="System">
                             <param id="0" name="Variable">Panning</param>
@@ -45,36 +46,74 @@
                             <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="9330491476344047" type="System">
-                            <param id="0" name="Variable">TouchFinX</param>
-                            <param id="1" name="Value">Touch.X</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="3189620014232516" type="System">
-                            <param id="0" name="Variable">TouchFinY</param>
-                            <param id="1" name="Value">Touch.Y</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="5174661476236227" type="System">
-                            <param id="0" name="Object to create">Plataforma</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">TouchIniX</param>
-                            <param id="3" name="Y">TouchIniY</param>
-                        </action>
-                        <action id="-5" name="Set width" sid="4489135034873944" type="Plataforma">
-                            <param id="0" name="Width">Function.Call(&quot;calcularAncho&quot;,TouchIniX,TouchFinX,TouchIniY,TouchFinY)</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="4001703485719211" type="Plataforma">
-                            <param id="0" name="Angle">angle(TouchIniX,TouchIniY,TouchFinX,TouchFinY)</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
-                        <event-block sid="1665340943800498">
+                        <event-block sid="1327458982432931">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9483460994629164" type="System">
+                                    <param id="0" name="Variable">touched</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="9330491476344047" type="System">
+                                    <param id="0" name="Variable">TouchFinX</param>
+                                    <param id="1" name="Value">Touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3189620014232516" type="System">
+                                    <param id="0" name="Variable">TouchFinY</param>
+                                    <param id="1" name="Value">Touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2241509462986365">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="9786115626898164" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="5286361163467157" type="System">
+                                    <param id="0" name="Variable">touched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>AGREGO UN EVENTO EN BLANCO QUE SE EJECUTA POR MAS QUE ENTRE AL IF DE ARRIBA O AL ELSE</comment>
+                        <event-block sid="8113297833527957">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="5174661476236227" type="System">
+                                    <param id="0" name="Object to create">Plataforma</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">TouchIniX</param>
+                                    <param id="3" name="Y">TouchIniY</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="4489135034873944" type="Plataforma">
+                                    <param id="0" name="Width">Function.Call(&quot;calcularAncho&quot;,TouchIniX,TouchFinX,TouchIniY,TouchFinY)</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="4001703485719211" type="Plataforma">
+                                    <param id="0" name="Angle">angle(TouchIniX,TouchIniY,TouchFinX,TouchFinY)</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="5505938253298564" type="colisionPlataforma">
+                                    <param id="0" name="Width">Plataforma.Width</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="9771198600149079" type="colisionPlataforma">
+                                    <param id="0" name="Angle">Plataforma.Angle</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="7817674451102218" type="Plataforma">
+                                    <param id="0" name="Instance variable">Visible</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9402924092643822" type="colisionPlataforma" />
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="1665340943800498">
                             <conditions>
                                 <condition id="1" inverted="1" name="Is overlapping another object" sid="6942284115403575" type="colisionPlataforma">
                                     <param id="0" name="Object">Escenario</param>
                                 </condition>
                                 <condition id="1" inverted="1" name="Is overlapping another object" sid="8204565789076752" type="colisionPlataforma">
-                                    <param id="0" name="Object">colisionPlataforma</param>
+                                    <param id="0" name="Object">Plataforma</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -85,7 +124,7 @@
                                 <action id="-9" name="Destroy" sid="9492158850175343" type="colisionPlataforma" />
                             </actions>
                         </event-block>
-                        <event-block sid="6120102561113504">
+                        <event-block disabled="1" sid="6120102561113504">
                             <conditions>
                                 <condition id="-22" name="Else" sid="893462199317517" type="System" />
                             </conditions>
@@ -159,6 +198,68 @@
                     <param id="0" name="Angle">angle(TouchIniX,TouchIniY,Touch.X,Touch.Y)</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="1932610615066585">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8023924919886681" type="System">
+                            <param id="0" name="Variable">touched</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="5283252937209576">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="3623197583878875" type="colisionPlataforma">
+                                    <param id="0" name="Object">Escenario</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="2031881442791873" type="colisionPlataforma">
+                                    <param id="0" name="Object">Plataforma</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2752308449209281" type="System">
+                                    <param id="0" name="Variable">touched</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="8942931836771343" type="System">
+                                    <param id="0" name="Variable">TouchFinX</param>
+                                    <param id="1" name="Value">Touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9467465786153474" type="System">
+                                    <param id="0" name="Variable">TouchFinY</param>
+                                    <param id="1" name="Value">Touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="6374455018011631">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="4566582813850458" type="colisionPlataforma">
+                            <param id="0" name="Object">Escenario</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="7652026309971798" type="colisionPlataforma">
+                            <param id="0" name="Object">Plataforma</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="234793732725609" type="System">
+                            <param id="0" name="Variable">touched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5948752869948854" type="System">
+                            <param id="0" name="Variable">TouchFinX</param>
+                            <param id="1" name="Value">Touch.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4339985030398598" type="System">
+                            <param id="0" name="Variable">TouchFinY</param>
+                            <param id="1" name="Value">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

@@ -21,8 +21,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="6589453553179262" type="Debug">
-                            <param id="0" name="Text">Panning</param>
+                        <action id="0" name="Set text" sid="8954819058007667" type="Touchs">
+                            <param id="0" name="Text">&quot;InicialX: &quot; &amp; TouchIniX &amp; &quot; InicialY:&quot; &amp;  TouchIniY</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4024406225190861" type="Touchs2">
+                            <param id="0" name="Text">&quot;FinalX: &quot; &amp; TouchFinX &amp; &quot; FinalY:&quot; &amp;  TouchFinY</param>
                         </action>
                     </actions>
                 </event-block>

@@ -19,14 +19,16 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Brad Larson" id="vignette">Vignette</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -123,7 +125,7 @@
                 <plugin id="Particles" />
                 <texture />
             </object-type>
-            <object-type name="Plataforma" sid="1061005549881597">
+            <object-type global="1" name="Plataforma" sid="1061005549881597">
                 <plugin id="TiledBg" />
                 <instance-variables>
                     <instance-variable name="Visible" sid="8645955437493389" type="boolean" />
@@ -169,9 +171,25 @@
             <object-folder expanded="1" name="Debug">
                 <object-type name="Touchs" sid="7417469781482397">
                     <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="1424330897847322">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                        <behavior-type name="Anchor" sid="1401879857157616">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
                 </object-type>
                 <object-type name="Touchs2" sid="7501836371274361">
                     <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="3359950819380677">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                        <behavior-type name="Pin" sid="2975338903455726">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
                 </object-type>
                 <object-type name="Debug" sid="6071331956296272">
                     <plugin id="Text" />
