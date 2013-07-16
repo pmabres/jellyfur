@@ -257,8 +257,8 @@
                 </object-type>
             </object-folder>
         </object-folder>
-        <object-folder expanded="0" name="GUI">
-            <object-folder expanded="0" name="WinMenu">
+        <object-folder expanded="1" name="GUI">
+            <object-folder expanded="1" name="WinMenu">
                 <object-type name="RestartMenu" sid="8514389490319554">
                     <plugin id="Sprite" />
                     <animation-folder expanded="1">

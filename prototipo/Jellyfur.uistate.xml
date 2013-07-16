@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>Nivel</layout>
         <layout>Nivel2</layout>
-        <event-sheet active="1">Jugador</event-sheet>
-        <event-sheet>Eventos Nivel</event-sheet>
+        <event-sheet>Jugador</event-sheet>
+        <event-sheet active="1">Eventos Nivel</event-sheet>
         <event-sheet>Pelota</event-sheet>
         <event-sheet>Globales</event-sheet>
         <event-sheet>Debug</event-sheet>

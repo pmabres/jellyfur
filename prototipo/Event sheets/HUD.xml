@@ -15,6 +15,7 @@
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="-26" name="Restart layout" sid="8960378482227902" type="System" />
+                <action id="-21" name="Reset global variables" sid="8806322496297619" type="System" />
             </actions>
         </event-block>
     </events>
