@@ -44,14 +44,29 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Physics" id="3" name="Apply impulse" sid="1840575304446603" type="pelota">
-                    <param id="0" name="Impulse X">0</param>
-                    <param id="1" name="Implulse Y">-0.5</param>
+                <action behavior="Physics" disabled="1" id="3" name="Apply impulse" sid="1840575304446603" type="pelota">
+                    <param id="0" name="Impulse X">-pelota.Physics.VelocityX  * 0.02</param>
+                    <param id="1" name="Implulse Y">-pelota.Physics.VelocityY * 0.02</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Physics" disabled="1" id="3" name="Apply impulse" sid="7683412890562716" type="pelota">
+                    <param id="0" name="Impulse X">cos(Plataforma.Angle)  + (pelota.Physics.VelocityX) *0.01 </param>
+                    <param id="1" name="Implulse Y">sin(Plataforma.Angle)  +(pelota.Physics.VelocityX) *0.01 </param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Physics" disabled="1" id="3" name="Apply impulse" sid="3904369065387843" type="pelota">
+                    <param id="0" name="Impulse X">-cos(Plataforma.Angle) </param>
+                    <param id="1" name="Implulse Y">sin(Plataforma.Angle) * 1.2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Physics" id="0" name="Apply force" sid="3229115245133792" type="pelota">
+                    <param id="0" name="Force X">cos(Plataforma.Angle) -90 </param>
+                    <param id="1" name="Force Y">sin(Plataforma.Angle)-90</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="6350826829218361">
+        <event-block collapsed="1" sid="6350826829218361">
             <conditions>
                 <condition disabled="1" id="1" name="Is overlapping another object" sid="3024646852798377" type="pelota">
                     <param id="0" name="Object">Meta</param>

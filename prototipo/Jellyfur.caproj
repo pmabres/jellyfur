@@ -90,6 +90,9 @@
                     <behavior-type name="ScrollTo" sid="3583194504785731">
                         <behavior id="scrollto" />
                     </behavior-type>
+                    <behavior-type name="Bullet" sid="775885445529772">
+                        <behavior id="Bullet" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3698062045223941" speed="5">
