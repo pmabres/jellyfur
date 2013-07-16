@@ -14,8 +14,8 @@
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="7247810437735448" type="System">
-                    <param id="0" name="Variable">win</param>
-                    <param id="1" name="Value">0</param>
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Value">STATE_WIN</param>
                 </action>
                 <action behavior="Physics" id="23" name="Enable/disable collisions" sid="5234647297125892" type="Meta">
                     <param id="0" name="Object">pelota</param>
@@ -32,24 +32,6 @@
                 <action id="-9" name="Destroy" sid="2561818701855074" type="Paneo" />
             </actions>
         </event-block>
-        <event-block sid="5789084737991759">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="6921900042085811" type="System" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="3243724347978801">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="4921555990588543" type="System">
-                            <param id="0" name="Variable">win</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="6851602143266637">
             <conditions>
                 <condition id="-19" name="On destroyed" sid="8832051677401407" type="Paneo" />
@@ -63,6 +45,21 @@
                 <action id="-9" name="Destroy" sid="6139716505800795" type="Plataforma" />
                 <action id="-13" name="Set time scale" sid="4516082960094298" type="System">
                     <param id="0" name="Time scale">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5579490865869162">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4116304909506767" type="System">
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">STATE_WIN</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="8931333507925852" type="winMenu">
+                    <param id="0" name="X">(ViewportLeft(&quot;Game&quot;) + ViewportRight(&quot;Game&quot;)) / 2</param>
+                    <param id="1" name="Y">(ViewportTop(&quot;Game&quot;) + ViewportBottom(&quot;Game&quot;)) / 2</param>
                 </action>
             </actions>
         </event-block>
