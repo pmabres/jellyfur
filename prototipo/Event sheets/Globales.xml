@@ -4,6 +4,7 @@
     <name>Globales</name>
     <events>
         <include>Eventos Nivel</include>
+        <variable constant="0" name="win" sid="7824944004378108" static="0" type="number">0</variable>
         <variable comment="Indica si se esta haciendo el paneo inicial" constant="0" name="Panning" sid="1503081492455265" static="0" type="number">1</variable>
         <variable constant="0" name="PlatformAngle" sid="8066486332632884" static="0" type="number">0</variable>
         <variable constant="0" name="TouchFinY" sid="5698907187149169" static="0" type="number">0</variable>
@@ -21,6 +22,16 @@
                     <param id="0" name="Value">sqrt((Function.Param(1)-Function.Param(0))^2 + (Function.Param(3)-Function.Param(2))^2)</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="6704233095375584">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8091408456298551" type="System">
+                    <param id="0" name="Variable">win</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>

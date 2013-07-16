@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Pelota</name>
     <events>
+        <include>Globales</include>
         <event-block sid="8584297399659228">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3657920102651457" type="System" />
@@ -18,7 +19,7 @@
             <actions>
                 <action id="-3" name="Create object" sid="2245107754952583" type="System">
                     <param id="0" name="Object to create">pelota</param>
-                    <param id="1" name="Layer">0</param>
+                    <param id="1" name="Layer">1</param>
                     <param id="2" name="X">50</param>
                     <param id="3" name="Y">50</param>
                 </action>
@@ -49,6 +50,61 @@
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="6350826829218361">
+            <conditions>
+                <condition disabled="1" id="1" name="Is overlapping another object" sid="3024646852798377" type="pelota">
+                    <param id="0" name="Object">Meta</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9346405387757004">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1032747999902218" type="System">
+                            <param id="0" name="First value">pelota.X - (pelota.Width/2)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">Meta.X - (Meta.Width / 2)</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="7981064601373589" type="System">
+                            <param id="0" name="First value">pelota.X + (pelota.Width/2)</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">Meta.X + (Meta.Width / 2)</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="8690814127378811" type="System">
+                            <param id="0" name="First value">pelota.Y - (pelota.Height/2)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">Meta.Y - (Meta.Height / 2)</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="6512049244619984" type="System">
+                            <param id="0" name="First value">pelota.Y + (pelota.Height/2)</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">Meta.Y + (Meta.Height / 2)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8628837298228847" type="System">
+                            <param id="0" name="Variable">win</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="3895089304944092" type="Meta">
+                            <param id="0" name="Object">pelota</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1015251553117045">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2238129038347503" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7821934722121244" type="System">
+                            <param id="0" name="Variable">win</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

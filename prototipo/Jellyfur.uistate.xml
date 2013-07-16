@@ -17,6 +17,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet>Pelota</event-sheet>
         <event-sheet>Globales</event-sheet>
         <event-sheet>Debug</event-sheet>
+        <event-sheet>HUD</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,5 +27,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1">
         <family expanded="0" name="DebugTexts" />
+        <family expanded="0" name="winMenu" />
     </families-expanded>
 </c2uistate>

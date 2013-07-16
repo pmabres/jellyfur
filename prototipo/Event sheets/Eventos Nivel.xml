@@ -3,10 +3,26 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel</name>
     <events>
+        <include>Pelota</include>
+        <include>HUD</include>
         <include>Debug</include>
         <include>Globales</include>
         <include>Jugador</include>
-        <include>Pelota</include>
+        <event-block sid="3375277167471665">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8936794395920061" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7247810437735448" type="System">
+                    <param id="0" name="Variable">win</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="5234647297125892" type="Meta">
+                    <param id="0" name="Object">pelota</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="4893606726418217">
             <conditions>
                 <condition id="2" name="Is in touch" sid="6679799053309494" type="Touch" />
@@ -19,6 +35,24 @@
                 </action>
                 <action id="-9" name="Destroy" sid="2561818701855074" type="Paneo" />
             </actions>
+        </event-block>
+        <event-block sid="5789084737991759">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6921900042085811" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3243724347978801">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4921555990588543" type="System">
+                            <param id="0" name="Variable">win</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

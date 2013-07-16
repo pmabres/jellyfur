@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Debug</name>
     <events>
-        <variable constant="0" name="isDebugMode" sid="349435799533823" static="0" type="number">0</variable>
         <include>Globales</include>
+        <variable constant="0" name="isDebugMode" sid="349435799533823" static="0" type="number">0</variable>
         <comment>Info Touch&apos;s</comment>
         <event-block sid="7145946065861886">
             <conditions>
@@ -26,6 +26,9 @@
                         </action>
                         <action id="0" name="Set text" sid="4024406225190861" type="Touchs2">
                             <param id="0" name="Text">&quot;FinalX: &quot; &amp; TouchFinX &amp; &quot; FinalY:&quot; &amp;  TouchFinY</param>
+                        </action>
+                        <action id="0" name="Set text" sid="870300740986101" type="Debug">
+                            <param id="0" name="Text">win</param>
                         </action>
                     </actions>
                 </event-block>
