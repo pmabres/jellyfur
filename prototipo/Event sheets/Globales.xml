@@ -7,6 +7,7 @@
         <variable constant="0" name="PlataformasEnabled" sid="6715269227113295" static="0" type="number">0</variable>
         <variable constant="0" name="GameState" sid="7824944004378108" static="0" type="number">0</variable>
         <variable constant="0" name="PlatformAngle" sid="8066486332632884" static="0" type="number">0</variable>
+        <variable constant="0" name="GameScale" sid="1758304312171012" static="0" type="number">0</variable>
         <variable constant="0" name="TouchFinY" sid="5698907187149169" static="0" type="number">0</variable>
         <variable constant="0" name="TouchIniY" sid="2108124168040214" static="0" type="number">0</variable>
         <variable constant="0" name="TouchFinX" sid="3249374152910727" static="0" type="number">0</variable>
