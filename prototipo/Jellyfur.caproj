@@ -193,6 +193,20 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type global="1" name="PlataformaFija" sid="8052341724992815">
+                <plugin id="TiledBg" />
+                <instance-variables>
+                    <instance-variable name="Visible" sid="2816460238358637" type="boolean" />
+                    <instance-variable name="Timer" sid="267786393115809" type="number" />
+                    <instance-variable name="TimerEnd" sid="4865939764447853" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Physics" sid="9909430294976635">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="HUD">
             <object-folder expanded="1" name="Debug">
@@ -317,6 +331,7 @@
     <layout-folder expanded="1">
         <layout>Nivel.xml</layout>
         <layout>Nivel2.xml</layout>
+        <layout>Tutorial.xml</layout>
     </layout-folder>
     <event-folder expanded="0">
         <event-sheet>Pelota.xml</event-sheet>
