@@ -16,6 +16,7 @@
         <variable constant="0" name="CurrentLayout" sid="8344417605823667" static="0" type="text"></variable>
         <variable constant="0" name="PreviousLayout" sid="6523635365377951" static="0" type="text"></variable>
         <variable constant="0" name="EscalaTiempo" sid="2952323018986557" static="0" type="number">0.7</variable>
+        <variable constant="1" name="GameLayer" sid="4120958010454681" static="0" type="number">2</variable>
         <variable constant="1" name="WIN_TIME" sid="8704315994168685" static="0" type="number">2</variable>
         <variable constant="1" name="STATE_MENU" sid="9039764717176948" static="0" type="number">0</variable>
         <variable constant="1" name="STATE_PLAYING" sid="543724593097451" static="0" type="number">1</variable>
@@ -23,6 +24,8 @@
         <variable constant="1" name="STATE_LOST" sid="953976210970594" static="0" type="number">3</variable>
         <variable constant="1" name="STATE_PAUSE" sid="2768741610644918" static="0" type="number">4</variable>
         <variable constant="1" name="STATE_PANING" sid="6202795973759997" static="0" type="number">5</variable>
+        <variable constant="0" name="xSpawn" sid="2759897360416953" static="0" type="number">0</variable>
+        <variable constant="0" name="ySpawn" sid="6623267048718661" static="0" type="number">0</variable>
         <event-block sid="732700605043561">
             <conditions>
                 <condition id="0" name="On function" sid="3584425088999928" type="Function">

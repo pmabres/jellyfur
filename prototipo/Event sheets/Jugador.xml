@@ -24,7 +24,7 @@
                         </action>
                         <action id="-3" name="Create object" sid="5490484591853701" type="System">
                             <param id="0" name="Object to create">colisionPlataforma</param>
-                            <param id="1" name="Layer">1</param>
+                            <param id="1" name="Layer">GAMELAYER</param>
                             <param id="2" name="X">TouchIniX</param>
                             <param id="3" name="Y">TouchIniY</param>
                         </action>
@@ -91,7 +91,7 @@
                                     <actions>
                                         <action id="-3" name="Create object" sid="5174661476236227" type="System">
                                             <param id="0" name="Object to create">Plataforma</param>
-                                            <param id="1" name="Layer">1</param>
+                                            <param id="1" name="Layer">GAMELAYER</param>
                                             <param id="2" name="X">TouchIniX</param>
                                             <param id="3" name="Y">TouchIniY</param>
                                         </action>

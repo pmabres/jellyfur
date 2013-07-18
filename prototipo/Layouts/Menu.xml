@@ -4,14 +4,14 @@
     <sid>4499589105599695</sid>
     <event-sheet>Menu</event-sheet>
     <size>
-        <width>960</width>
-        <height>720</height>
+        <width>1280</width>
+        <height>768</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
         <vertical>500</vertical>
     </margins>
-    <unbounded-scrolling>0</unbounded-scrolling>
+    <unbounded-scrolling>1</unbounded-scrolling>
     <layers>
         <layer name="back" sid="4097765223695553">
             <initially-visible>1</initially-visible>
@@ -27,6 +27,26 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="TiledBackground" uid="154">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-497.5</x>
+                        <y>-497</y>
+                        <z>0</z>
+                        <width>2275</width>
+                        <height>1762</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="MPrincipal" uid="144">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -37,8 +57,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>0</y>
+                        <x>160</x>
+                        <y>24</y>
                         <z>0</z>
                         <width>960</width>
                         <height>720</height>
@@ -59,8 +79,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>486</x>
-                        <y>319</y>
+                        <x>646</x>
+                        <y>343</y>
                         <z>0</z>
                         <width>322</width>
                         <height>377</height>
@@ -109,8 +129,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>0</y>
+                        <x>160</x>
+                        <y>24</y>
                         <z>0</z>
                         <width>960</width>
                         <height>720</height>

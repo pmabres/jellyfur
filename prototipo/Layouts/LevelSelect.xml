@@ -4,14 +4,14 @@
     <sid>1283235489388341</sid>
     <event-sheet>Menu</event-sheet>
     <size>
-        <width>960</width>
-        <height>720</height>
+        <width>1280</width>
+        <height>768</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
         <vertical>500</vertical>
     </margins>
-    <unbounded-scrolling>0</unbounded-scrolling>
+    <unbounded-scrolling>1</unbounded-scrolling>
     <layers>
         <layer name="Layer 0" sid="9918303597764148">
             <initially-visible>1</initially-visible>
@@ -27,6 +27,26 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="TiledBackground" uid="155">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-497.5</x>
+                        <y>-497</y>
+                        <z>0</z>
+                        <width>2275</width>
+                        <height>1762</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="NIvelesYMundos" uid="145">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -37,36 +57,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>0</y>
+                        <x>160</x>
+                        <y>24</y>
                         <z>0</z>
                         <width>960</width>
                         <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ElegirTutorial" uid="146">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>308</x>
-                        <y>139</y>
-                        <z>0</z>
-                        <width>95</width>
-                        <height>95</height>
-                        <depth>0</depth>
-                        <hotspotX>0.50526315</hotspotX>
-                        <hotspotY>0.50526315</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -81,8 +79,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>439</x>
-                        <y>139</y>
+                        <x>599</x>
+                        <y>163</y>
                         <z>0</z>
                         <width>95</width>
                         <height>95</height>
@@ -103,8 +101,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>568</x>
-                        <y>140</y>
+                        <x>728</x>
+                        <y>164</y>
                         <z>0</z>
                         <width>95</width>
                         <height>95</height>
@@ -125,10 +123,32 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>91.757881165</x>
-                        <y>628</y>
+                        <x>251.757873535</x>
+                        <y>652</y>
                         <z>0</z>
                         <width>144</width>
+                        <height>95</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50526315</hotspotX>
+                        <hotspotY>0.50526315</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ElegirTutorial" uid="146">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>468</x>
+                        <y>163</y>
+                        <z>0</z>
+                        <width>95</width>
                         <height>95</height>
                         <depth>0</depth>
                         <hotspotX>0.50526315</hotspotX>

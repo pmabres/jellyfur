@@ -8,13 +8,20 @@
         <include>Debug</include>
         <include>Globales</include>
         <include>Jugador</include>
-        <event-block sid="4554407117598159">
-            <conditions />
+        <event-block sid="545604382510679">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1182753781749397" type="System" />
+            </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="1988671779952962" type="System">
-                    <param id="0" name="Variable">CurrentLayout</param>
-                    <param id="1" name="Value">LayoutName</param>
+                <action id="-9" name="Set value" sid="2481507365469163" type="System">
+                    <param id="0" name="Variable">xSpawn</param>
+                    <param id="1" name="Value">pelota.X</param>
                 </action>
+                <action id="-9" name="Set value" sid="8688307882975763" type="System">
+                    <param id="0" name="Variable">ySpawn</param>
+                    <param id="1" name="Value">pelota.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9543357814393094" type="pelota" />
             </actions>
         </event-block>
         <event-block sid="3375277167471665">
@@ -22,18 +29,21 @@
                 <condition id="-2" name="On start of layout" sid="8936794395920061" type="System" />
             </conditions>
             <actions>
-                <action id="-21" name="Reset global variables" sid="5392833552387682" type="System" />
+                <action disabled="1" id="-21" name="Reset global variables" sid="5392833552387682" type="System" />
                 <action id="-9" name="Set value" sid="7247810437735448" type="System">
                     <param id="0" name="Variable">GameState</param>
                     <param id="1" name="Value">STATE_PANING</param>
                 </action>
                 <action id="-9" name="Set value" sid="5230988526952475" type="System">
                     <param id="0" name="Variable">GameScale</param>
-                    <param id="1" name="Value">960/LayoutWidth</param>
+                    <param id="1" name="Value">1280/LayoutWidth</param>
                 </action>
-                <action id="-10" name="Set value" sid="4571055509161798" type="Menu">
-                    <param id="0" name="Instance variable">visible</param>
-                    <param id="1" name="Value">0</param>
+                <action id="-9" name="Set value" sid="1988671779952962" type="System">
+                    <param id="0" name="Variable">CurrentLayout</param>
+                    <param id="1" name="Value">LayoutName</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7914769620923472" type="Menu">
+                    <param id="0" name="Visibility">0</param>
                 </action>
                 <action behavior="Physics" id="23" name="Enable/disable collisions" sid="5234647297125892" type="Meta">
                     <param id="0" name="Object">pelota</param>
@@ -89,6 +99,12 @@
                 <condition id="-19" name="On destroyed" sid="8832051677401407" type="Paneo" />
             </conditions>
             <actions>
+                <action id="-3" name="Create object" sid="6994671452619571" type="System">
+                    <param id="0" name="Object to create">pelota</param>
+                    <param id="1" name="Layer">GAMELAYER</param>
+                    <param id="2" name="X">xSpawn</param>
+                    <param id="3" name="Y">ySpawn</param>
+                </action>
                 <action id="-9" name="Set value" sid="5291810918483208" type="System">
                     <param id="0" name="Variable">GameState</param>
                     <param id="1" name="Value">STATE_PLAYING</param>
@@ -136,15 +152,14 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="8857067368827969" type="Menu">
-                    <param id="0" name="Instance variable">visible</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="9655864468800342" type="Resume">
-                    <param id="0" name="Visibility">0</param>
-                </action>
                 <action id="-15" name="Set visible" sid="5558630606853369" type="NextLevel">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5080140195915043" type="Menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8800710588710699" type="Resume">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
@@ -157,15 +172,14 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="762851877520233" type="Menu">
-                    <param id="0" name="Instance variable">visible</param>
-                    <param id="1" name="Value">1</param>
+                <action id="-15" name="Set visible" sid="7381082515296276" type="NextLevel">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="2330723729553201" type="Resume">
+                <action id="-15" name="Set visible" sid="12707799533188" type="Menu">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="-15" name="Set visible" sid="2795372646518452" type="NextLevel">
-                    <param id="0" name="Visibility">0</param>
+                <action id="-15" name="Set visible" sid="586345274380632" type="Resume">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
@@ -183,7 +197,7 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-13" name="Set time scale" sid="8268057234897387" type="System">
-                    <param id="0" name="Time scale">ESCALATIEMPO</param>
+                    <param id="0" name="Time scale">EscalaTiempo</param>
                 </action>
             </actions>
         </event-block>
@@ -211,31 +225,7 @@
             </conditions>
             <actions>
                 <action id="-13" name="Set time scale" sid="409993209445242" type="System">
-                    <param id="0" name="Time scale">ESCALATIEMPO</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6051281877461853">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="3464744817731767" type="Menu">
-                    <param id="0" name="Instance variable">visible</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="6077429493797918" type="Menu">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9325575920713464">
-            <conditions>
-                <condition id="-22" name="Else" sid="2335568901346092" type="System" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="2734941927880495" type="Menu">
-                    <param id="0" name="Visibility">0</param>
+                    <param id="0" name="Time scale">EscalaTiempo</param>
                 </action>
             </actions>
         </event-block>

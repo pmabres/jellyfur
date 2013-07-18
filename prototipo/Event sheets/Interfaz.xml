@@ -55,9 +55,8 @@
                     <param id="1" name="Value">STATE_PLAYING</param>
                 </action>
                 <action id="-9" name="Destroy" sid="4600433006669464" type="colisionPlataforma" />
-                <action id="-10" name="Set value" sid="7906342059814269" type="Menu">
-                    <param id="0" name="Instance variable">visible</param>
-                    <param id="1" name="Value">0</param>
+                <action id="-15" name="Set visible" sid="8730008809230714" type="Menu">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
