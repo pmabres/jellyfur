@@ -46,6 +46,34 @@
                     <param id="0" name="X">LayoutWidth/2</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="5971076937211454">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6823798905475857" type="System">
+                            <param id="0" name="Variable">CurrentLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Nivel1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7230559837232456" type="System">
+                            <param id="0" name="Variable">EscalaTiempo</param>
+                            <param id="1" name="Value">0.7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1021673084302251">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="645861571537901" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6819399371507061" type="System">
+                            <param id="0" name="Variable">EscalaTiempo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4893606726418217">
             <conditions>
@@ -112,6 +140,12 @@
                     <param id="0" name="Instance variable">visible</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-15" name="Set visible" sid="9655864468800342" type="Resume">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5558630606853369" type="NextLevel">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5376143708816911">
@@ -126,6 +160,12 @@
                 <action id="-10" name="Set value" sid="762851877520233" type="Menu">
                     <param id="0" name="Instance variable">visible</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2330723729553201" type="Resume">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2795372646518452" type="NextLevel">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
@@ -206,32 +246,6 @@
             <actions>
                 <action id="-9" name="Set value" sid="7533432978238823" type="System">
                     <param id="0" name="Variable">isDebugMode</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2040764588179606">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="6373158621637836" type="System">
-                    <param id="0" name="Variable">CurrentLayout</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;Nivel1&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="4097057805315795" type="System">
-                    <param id="0" name="Variable">EscalaTiempo</param>
-                    <param id="1" name="Value">0.7</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8961875481106927">
-            <conditions>
-                <condition id="-22" name="Else" sid="6050695651027395" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="6291833750817334" type="System">
-                    <param id="0" name="Variable">EscalaTiempo</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>

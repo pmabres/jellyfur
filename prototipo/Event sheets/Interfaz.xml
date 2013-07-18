@@ -61,5 +61,61 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9666521218012235">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1055683244409176" type="Touch">
+                    <param id="0" name="Object">MainMenu</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="7068981408596776" type="MainMenu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5266568749200953" type="System">
+                    <param id="0" name="Layout">LevelSelect</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2210917744167459">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1327098240614522" type="Touch">
+                    <param id="0" name="Object">NextLevel</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="1911718434805475" type="NextLevel" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5755511970063921">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="399434352410712" type="System">
+                            <param id="0" name="Variable">CurrentLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Tutorial&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="3791215559834092" type="System" />
+                        <action id="-9" name="Destroy" sid="4280307036449012" type="Meta" />
+                        <action id="-2" name="Go to layout" sid="7997585397391147" type="System">
+                            <param id="0" name="Layout">Nivel1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6202703058396773">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9302388860910018" type="System">
+                            <param id="0" name="Variable">CurrentLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Nivel1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="5871482366097282" type="System" />
+                        <action id="-9" name="Destroy" sid="1710249068620498" type="Meta" />
+                        <action id="-2" name="Go to layout" sid="9736464524314012" type="System">
+                            <param id="0" name="Layout">Nivel2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

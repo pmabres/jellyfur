@@ -10,20 +10,20 @@
     <unique-id>3a8yy9egkbvyg</unique-id>
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
-        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -86,7 +86,7 @@
             </object-type>
         </object-folder>
         <object-folder expanded="0" name="Sprites">
-            <object-type global="1" name="pelota" sid="5023381750019706">
+            <object-type name="pelota" sid="5023381750019706">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Physics" sid="1792838602789731">
@@ -133,7 +133,7 @@
                 <plugin id="Particles" />
                 <texture />
             </object-type>
-            <object-type global="1" name="Plataforma" sid="1061005549881597">
+            <object-type name="Plataforma" sid="1061005549881597">
                 <plugin id="TiledBg" />
                 <instance-variables>
                     <instance-variable name="Visible" sid="8645955437493389" type="boolean" />
@@ -147,7 +147,7 @@
                 </behaviors>
                 <texture />
             </object-type>
-            <object-type global="1" name="colisionPlataforma" sid="4193821739066429">
+            <object-type name="colisionPlataforma" sid="4193821739066429">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3288641314011571" speed="5">
@@ -166,7 +166,7 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
-            <object-type global="1" name="Meta" sid="9907973370201869">
+            <object-type name="Meta" sid="9907973370201869">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Physics" sid="75824515389504">
@@ -190,7 +190,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type global="1" name="PlataformaFija" sid="8052341724992815">
+            <object-type name="PlataformaFija" sid="8052341724992815">
                 <plugin id="TiledBg" />
                 <instance-variables>
                     <instance-variable name="Visible" sid="2816460238358637" type="boolean" />
@@ -253,7 +253,7 @@
                 </object-type>
             </object-folder>
             <object-folder expanded="1" name="General">
-                <object-type global="1" name="Restart" sid="6429628122989235">
+                <object-type name="Restart" sid="6429628122989235">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Pin" sid="8558370681776583">
@@ -266,7 +266,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type global="1" name="Pause" sid="8705490248151251">
+                <object-type name="Pause" sid="8705490248151251">
                     <plugin id="Sprite" />
                     <animation-folder expanded="1">
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3827661579314562" speed="5">
