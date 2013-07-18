@@ -10,15 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>Nivel</layout>
-        <layout active="1">Nivel2</layout>
-        <layout>Tutorial</layout>
-        <event-sheet>Jugador</event-sheet>
-        <event-sheet>Eventos Nivel</event-sheet>
-        <event-sheet>Pelota</event-sheet>
-        <event-sheet>Globales</event-sheet>
-        <event-sheet>Debug</event-sheet>
-        <event-sheet>HUD</event-sheet>
+        <layout>Menu</layout>
+        <layout active="1">LevelSelect</layout>
+        <event-sheet>Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,6 +22,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="0">
         <family expanded="0" name="DebugTexts" />
-        <family expanded="0" name="winMenu" />
+        <family expanded="1" name="Menu" />
     </families-expanded>
 </c2uistate>

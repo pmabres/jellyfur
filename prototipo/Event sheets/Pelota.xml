@@ -37,9 +37,9 @@
                 </action>
             </actions>
         </event-block>
-        <event-block collapsed="1" sid="6350826829218361">
+        <event-block sid="6350826829218361">
             <conditions>
-                <condition disabled="1" id="1" name="Is overlapping another object" sid="3024646852798377" type="pelota">
+                <condition id="1" name="Is overlapping another object" sid="3024646852798377" type="pelota">
                     <param id="0" name="Object">Meta</param>
                 </condition>
             </conditions>

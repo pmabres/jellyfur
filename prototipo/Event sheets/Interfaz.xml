@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Interfaz</name>
+    <events>
+        <include>Globales</include>
+        <event-block sid="6118763577665306">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1539048749590075" type="Touch">
+                    <param id="0" name="Object">Restart</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="7760947207212342" type="Restart" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="8960378482227902" type="System" />
+                <action id="-21" name="Reset global variables" sid="8806322496297619" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="3576519966215811">
+            <conditions>
+                <condition id="3" name="On touched object" sid="19201539398835" type="Touch">
+                    <param id="0" name="Object">Pause</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="488918240814176" type="Pause" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5126873913795497" type="System">
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Value">STATE_PAUSE</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4025866880554276">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8497429772287578" type="Touch">
+                    <param id="0" name="Object">RestartMenu</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="5044746857619612" type="RestartMenu" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="880417573716503" type="System" />
+                <action id="-21" name="Reset global variables" sid="3699488891402455" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="9799282977631782">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1322144014663971" type="Touch">
+                    <param id="0" name="Object">Resume</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="4613775248938245" type="Resume" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6087384406523566" type="System">
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Value">STATE_PLAYING</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4600433006669464" type="colisionPlataforma" />
+                <action id="-10" name="Set value" sid="7906342059814269" type="Menu">
+                    <param id="0" name="Instance variable">visible</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

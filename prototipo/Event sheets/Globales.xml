@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Globales</name>
     <events>
-        <include>Eventos Nivel</include>
+        <include>Main</include>
         <variable constant="0" name="PlataformasEnabled" sid="6715269227113295" static="0" type="number">0</variable>
         <variable constant="0" name="GameState" sid="7824944004378108" static="0" type="number">0</variable>
         <variable constant="0" name="PlatformAngle" sid="8066486332632884" static="0" type="number">0</variable>
@@ -13,11 +13,15 @@
         <variable constant="0" name="TouchFinX" sid="3249374152910727" static="0" type="number">0</variable>
         <variable constant="0" name="TouchIniX" sid="8442675877906303" static="0" type="number">0</variable>
         <variable constant="0" name="winning" sid="7055382205911811" static="0" type="number">0</variable>
-        <variable constant="1" name="STATE_MENU" sid="9039764717176948" static="0" type="number">0</variable>
+        <variable constant="0" name="CurrentLayout" sid="8344417605823667" static="0" type="text"></variable>
+        <variable constant="0" name="EscalaTiempo" sid="2952323018986557" static="0" type="number">0.7</variable>
         <variable constant="1" name="WIN_TIME" sid="8704315994168685" static="0" type="number">2</variable>
+        <variable constant="1" name="STATE_MENU" sid="9039764717176948" static="0" type="number">0</variable>
         <variable constant="1" name="STATE_PLAYING" sid="543724593097451" static="0" type="number">1</variable>
         <variable constant="1" name="STATE_WIN" sid="3339660148131313" static="0" type="number">2</variable>
         <variable constant="1" name="STATE_LOST" sid="953976210970594" static="0" type="number">3</variable>
+        <variable constant="1" name="STATE_PAUSE" sid="2768741610644918" static="0" type="number">4</variable>
+        <variable constant="1" name="STATE_PANING" sid="6202795973759997" static="0" type="number">5</variable>
         <event-block sid="732700605043561">
             <conditions>
                 <condition id="0" name="On function" sid="3584425088999928" type="Function">
