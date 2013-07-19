@@ -11,7 +11,7 @@
         <horizontal>500</horizontal>
         <vertical>500</vertical>
     </margins>
-    <unbounded-scrolling>1</unbounded-scrolling>
+    <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
         <layer name="Layer 0" sid="9918303597764148">
             <initially-visible>1</initially-visible>
@@ -88,7 +88,7 @@
                         <hotspotX>0.50526315</hotspotX>
                         <hotspotY>0.50526315</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.699999988</opacity>
                     </world>
                 </instance>
                 <instance type="ElegirNivel2" uid="148">
@@ -110,7 +110,7 @@
                         <hotspotX>0.50526315</hotspotX>
                         <hotspotY>0.50526315</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.699999988</opacity>
                     </world>
                 </instance>
                 <instance type="Volver" uid="149">
@@ -154,7 +154,7 @@
                         <hotspotX>0.50526315</hotspotX>
                         <hotspotY>0.50526315</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.699999988</opacity>
                     </world>
                 </instance>
             </instances>

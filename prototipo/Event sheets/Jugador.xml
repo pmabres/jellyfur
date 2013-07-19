@@ -98,6 +98,9 @@
                                         <action id="-5" name="Set width" sid="4489135034873944" type="Plataforma">
                                             <param id="0" name="Width">Function.Call(&quot;calcularAncho&quot;,TouchIniX,TouchFinX,TouchIniY,TouchFinY)</param>
                                         </action>
+                                        <action id="-5" name="Set width" sid="4518644987321909" type="Plataforma">
+                                            <param id="0" name="Width">Plataforma.Width &gt; 300 ? 300 : Plataforma.Width &lt; 50 ? 50 : Plataforma.Width</param>
+                                        </action>
                                         <action id="-8" name="Set angle" sid="4001703485719211" type="Plataforma">
                                             <param id="0" name="Angle">angle(TouchIniX,TouchIniY,TouchFinX,TouchFinY)</param>
                                         </action>

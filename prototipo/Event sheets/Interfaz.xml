@@ -93,6 +93,7 @@
                     <actions>
                         <action id="-21" name="Reset global variables" sid="3791215559834092" type="System" />
                         <action id="-9" name="Destroy" sid="4280307036449012" type="Meta" />
+                        <action id="-9" name="Destroy" sid="1768015494811565" type="MetaCollision" />
                         <action id="-2" name="Go to layout" sid="7997585397391147" type="System">
                             <param id="0" name="Layout">Nivel1</param>
                         </action>
@@ -109,6 +110,7 @@
                     <actions>
                         <action id="-21" name="Reset global variables" sid="5871482366097282" type="System" />
                         <action id="-9" name="Destroy" sid="1710249068620498" type="Meta" />
+                        <action id="-9" name="Destroy" sid="9494421505486242" type="MetaCollision" />
                         <action id="-2" name="Go to layout" sid="9736464524314012" type="System">
                             <param id="0" name="Layout">Nivel2</param>
                         </action>

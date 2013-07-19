@@ -13,10 +13,6 @@
                 <action id="-2" name="Go to layout" sid="86699478649894" type="System">
                     <param id="0" name="Layout">LevelSelect</param>
                 </action>
-                <action id="-9" name="Set value" sid="5766444648910511" type="System">
-                    <param id="0" name="Variable">PreviousLayout</param>
-                    <param id="1" name="Value">LayoutName</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="6246665831430964">
@@ -26,9 +22,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="3590148729362686" type="System">
-                    <param id="0" name="Layout">PreviousLayout</param>
+                <action id="-2" name="Go to layout" sid="3590148729362686" type="System">
+                    <param id="0" name="Layout">Menu</param>
                 </action>
+                <action id="-26" name="Restart layout" sid="1605368635088489" type="System" />
             </actions>
         </event-block>
         <event-block sid="424787871331498">

@@ -27,9 +27,6 @@
                         <action id="0" name="Set text" sid="4024406225190861" type="Touchs2">
                             <param id="0" name="Text">&quot;FinalX: &quot; &amp; TouchFinX &amp; &quot; FinalY:&quot; &amp;  TouchFinY</param>
                         </action>
-                        <action id="0" name="Set text" sid="870300740986101" type="Debug">
-                            <param id="0" name="Text">xSpawn</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>

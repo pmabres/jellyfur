@@ -48,9 +48,9 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="3895089304944092" type="Meta">
-                            <param id="0" name="Object">pelota</param>
-                            <param id="1" name="State">1</param>
+                        <action id="-3" name="Set position" sid="1871958326994351" type="MetaCollision">
+                            <param id="0" name="X">Meta.X</param>
+                            <param id="1" name="Y">meta.Y</param>
                         </action>
                     </actions>
                     <sub-events>

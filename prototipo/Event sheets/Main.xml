@@ -8,6 +8,23 @@
         <include>Debug</include>
         <include>Globales</include>
         <include>Jugador</include>
+        <event-block sid="4893606726418217">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="6679799053309494" type="Touch" />
+                <condition id="-3" name="Is on-screen" sid="8556388189360116" type="Paneo" />
+                <condition id="-14" name="Compare variable" sid="3800587905706132" type="System">
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">STATE_PANING</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2561818701855074" type="Paneo" />
+                <action id="0" name="Set text" sid="990759243698635" type="Debug">
+                    <param id="0" name="Text">&quot;SEdEStruYEEEEE&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="545604382510679">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1182753781749397" type="System" />
@@ -32,7 +49,7 @@
                 <action disabled="1" id="-21" name="Reset global variables" sid="5392833552387682" type="System" />
                 <action id="-9" name="Set value" sid="7247810437735448" type="System">
                     <param id="0" name="Variable">GameState</param>
-                    <param id="1" name="Value">STATE_PANING</param>
+                    <param id="1" name="Value">STATE_START</param>
                 </action>
                 <action id="-9" name="Set value" sid="5230988526952475" type="System">
                     <param id="0" name="Variable">GameScale</param>
@@ -44,10 +61,6 @@
                 </action>
                 <action id="-15" name="Set visible" sid="7914769620923472" type="Menu">
                     <param id="0" name="Visibility">0</param>
-                </action>
-                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="5234647297125892" type="Meta">
-                    <param id="0" name="Object">pelota</param>
-                    <param id="1" name="State">0</param>
                 </action>
                 <action behavior="Physics" id="13" name="Set stepping mode" sid="2814515740465325" type="pelota">
                     <param id="0" name="Mode">1</param>
@@ -84,15 +97,6 @@
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="4893606726418217">
-            <conditions>
-                <condition id="2" name="Is in touch" sid="6679799053309494" type="Touch" />
-                <condition id="-3" name="Is on-screen" sid="8556388189360116" type="Paneo" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="2561818701855074" type="Paneo" />
-            </actions>
         </event-block>
         <event-block sid="6851602143266637">
             <conditions>
@@ -138,7 +142,7 @@
             </conditions>
             <actions>
                 <action id="-17" name="Set layer scale" sid="3750295136843111" type="System">
-                    <param id="0" name="Layer">1</param>
+                    <param id="0" name="Layer">2</param>
                     <param id="1" name="Scale">GameScale</param>
                 </action>
             </actions>
@@ -234,9 +238,24 @@
                 <condition id="-18" name="Is in preview" sid="5576253130012818" type="System" />
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="7533432978238823" type="System">
+                <action disabled="1" id="-9" name="Set value" sid="7533432978238823" type="System">
                     <param id="0" name="Variable">isDebugMode</param>
                     <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3968770580965475">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="796349097696759" type="System">
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">STATE_START</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9692062771821769" type="System">
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Value">STATE_PANING</param>
                 </action>
             </actions>
         </event-block>
