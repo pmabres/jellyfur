@@ -10,13 +10,13 @@
     <unique-id>3a8yy9egkbvyg</unique-id>
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
-        <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
@@ -49,7 +49,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-folder expanded="0" name="Sistema">
             <object-type name="Touch" sid="7879738715835822">
                 <plugin id="Touch" />
@@ -101,13 +101,13 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3698062045223941" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
-                                <point x="0.184211" y="0.184211" />
-                                <point x="0.5" y="0.0263158" />
-                                <point x="0.921053" y="0.0789474" />
-                                <point x="1" y="0.5" />
-                                <point x="0.842105" y="0.842105" />
-                                <point x="0.5" y="0.947368" />
-                                <point x="0.157895" y="0.842105" />
+                                <point x="0.131579" y="0.131579" />
+                                <point x="0.5" y="0" />
+                                <point x="0.947368" y="0.0526316" />
+                                <point x="0.973684" y="0.5" />
+                                <point x="0.868421" y="0.868421" />
+                                <point x="0.5" y="1" />
+                                <point x="0.131579" y="0.868421" />
                                 <point x="0" y="0.5" />
                             </collision-poly>
                         </frame>
@@ -525,14 +525,14 @@
             </instance-variables>
         </family>
     </families>
-    <layout-folder expanded="1">
+    <layout-folder expanded="0">
         <layout>Nivel1.xml</layout>
         <layout>Nivel2.xml</layout>
         <layout>Tutorial.xml</layout>
         <layout>Menu.xml</layout>
         <layout>LevelSelect.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder expanded="1">
         <event-sheet>Pelota.xml</event-sheet>
         <event-sheet>Jugador.xml</event-sheet>
         <event-sheet>Main.xml</event-sheet>

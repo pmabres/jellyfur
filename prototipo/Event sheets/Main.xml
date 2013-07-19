@@ -8,9 +8,24 @@
         <include>Debug</include>
         <include>Globales</include>
         <include>Jugador</include>
+        <event-block sid="6040988422152607">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="535697112649754" type="System">
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">STATE_START</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4224307962729443" type="System">
+                    <param id="0" name="Variable">GameState</param>
+                    <param id="1" name="Value">STATE_PANING</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="4893606726418217">
             <conditions>
-                <condition id="2" name="Is in touch" sid="6679799053309494" type="Touch" />
+                <condition id="0" name="On any touch start" sid="6679799053309494" type="Touch" />
                 <condition id="-3" name="Is on-screen" sid="8556388189360116" type="Paneo" />
                 <condition id="-14" name="Compare variable" sid="3800587905706132" type="System">
                     <param id="0" name="Variable">GameState</param>
@@ -20,9 +35,6 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="2561818701855074" type="Paneo" />
-                <action id="0" name="Set text" sid="990759243698635" type="Debug">
-                    <param id="0" name="Text">&quot;SEdEStruYEEEEE&quot;</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="545604382510679">
@@ -46,7 +58,6 @@
                 <condition id="-2" name="On start of layout" sid="8936794395920061" type="System" />
             </conditions>
             <actions>
-                <action disabled="1" id="-21" name="Reset global variables" sid="5392833552387682" type="System" />
                 <action id="-9" name="Set value" sid="7247810437735448" type="System">
                     <param id="0" name="Variable">GameState</param>
                     <param id="1" name="Value">STATE_START</param>
@@ -67,6 +78,9 @@
                 </action>
                 <action id="-1" name="Set X" sid="5715173077013572" type="Paneo">
                     <param id="0" name="X">LayoutWidth/2</param>
+                </action>
+                <action id="0" name="Set text" sid="1550414725251417" type="Debug">
+                    <param id="0" name="Text">GameState</param>
                 </action>
             </actions>
             <sub-events>
@@ -142,7 +156,7 @@
             </conditions>
             <actions>
                 <action id="-17" name="Set layer scale" sid="3750295136843111" type="System">
-                    <param id="0" name="Layer">2</param>
+                    <param id="0" name="Layer">GAMELAYER</param>
                     <param id="1" name="Scale">GameScale</param>
                 </action>
             </actions>
@@ -238,24 +252,9 @@
                 <condition id="-18" name="Is in preview" sid="5576253130012818" type="System" />
             </conditions>
             <actions>
-                <action disabled="1" id="-9" name="Set value" sid="7533432978238823" type="System">
+                <action id="-9" name="Set value" sid="7533432978238823" type="System">
                     <param id="0" name="Variable">isDebugMode</param>
                     <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3968770580965475">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="796349097696759" type="System">
-                    <param id="0" name="Variable">GameState</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">STATE_START</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="9692062771821769" type="System">
-                    <param id="0" name="Variable">GameState</param>
-                    <param id="1" name="Value">STATE_PANING</param>
                 </action>
             </actions>
         </event-block>

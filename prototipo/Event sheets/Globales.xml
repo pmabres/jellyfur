@@ -16,7 +16,7 @@
         <variable constant="0" name="CurrentLayout" sid="8344417605823667" static="0" type="text"></variable>
         <variable constant="0" name="PreviousLayout" sid="6523635365377951" static="0" type="text"></variable>
         <variable constant="0" name="EscalaTiempo" sid="2952323018986557" static="0" type="number">0.7</variable>
-        <variable constant="1" name="GameLayer" sid="4120958010454681" static="0" type="number">2</variable>
+        <variable constant="1" name="GAMELAYER" sid="4120958010454681" static="0" type="number">1</variable>
         <variable constant="1" name="WIN_TIME" sid="8704315994168685" static="0" type="number">2</variable>
         <variable constant="1" name="STATE_MENU" sid="9039764717176948" static="0" type="number">0</variable>
         <variable constant="1" name="STATE_PLAYING" sid="543724593097451" static="0" type="number">1</variable>
